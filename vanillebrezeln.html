@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vanillebrezeln</title>
+
+    <style src="style.css"></style>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+
+    <link rel="stylesheet" href="croissants.html">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+
+    <link rel="shortcut icon" href="./img/logo_small.png">
+</head>
+<body onload="includeHTML()">
+    <header  class="topnav" w3-include-html="./header.html"></header>
+    
+    <section1 class="croissant-section1">
+        <h1>Vanillebrezeln</h1><br>
+        <img class="header-image" src="./img/vanillebrezeln.webp" alt="BREZELN.IMG">
+    </section1>
+
+    <section2 class="section2-img">
+        <div class="cookinfo">
+            <img class="logo-img" src="./img/clock-regular.svg" alt="clock.img">
+            <br>
+            <span>40 Min.</span>
+        </div>
+        <div class="cookinfo">
+            <img class="logo-img" src="./img/brain-solid.svg" alt="brain.img"><br>
+            <span>Normal</span>
+        </div>
+        <div class="cookinfo">
+            <img class="logo-img" src="./img/calendar-alt-regular.svg" alt="calendar.img">
+            <br>
+            <span>27.11.2023</span>
+        </div>
+    </section2>
+
+    <section3 class="portions">
+        <span>Zutaten für</span>
+        <input id="amount" type="number" min="1" max="10" class="input" value="2" required>
+        <a onclick="amountCheck(2); return false" class="portionen-button">Portionen</a>
+    </section3>
+
+    <section4 class="section4" id="ingrediants">
+        <span class="zutat1">2 Vanilleschote(n)</span>
+        <span class="zutat2">280g Butter</span>
+        <span class="zutat1">200g Zucker</span>
+        <span class="zutat2">2 Eier</span>
+        <span class="zutat1">500g Mehl</span>
+        <span class="zutat2">300g Puderzucker</span>
+        <span class="zutat1">2EL Zitronensaft</span>
+    </section4>
+
+    <section5>
+        <div class="zubereitungh1">
+        <h1>Zubereitung</h1>
+        </div>
+        <div class="cooking-time">
+        <div class="cookinfo">
+            <img class="logo-img" src="./img/clock-regular.svg" alt="clock.img">
+            <br>
+            <span>ca. 40 Minuten</span>
+        </div>
+        <div class="cookinfo">
+            <img class="logo-img" src="./img/clock-regular.svg" alt="clock.img">
+            <br>
+            <span>Gesamtzeit ca. 1 h 30 Minuten.</span>
+        </div>
+        </div>
+        <div class="zubereitung-text">
+            <p>Vanilleschote anritzen, das Mark herauskratzen. Butter und Zucker cremig schlagen. Das Ei und Mehl zufügen und feste verkneten. Teig ca. 60 min in den Kühlschrank geben.
+                Backofen auf 200 Grad vorheizen.
+                Den Teig auf bemehlter Fläche portionsweise ca. 5 mm dick ausrollen. Brezeln ausstechen. Auf einem Backblech ca. 10 min backen. Dann abkühlen lassen.
+                Puderzucker mit Zitronensaft und 1-2 El Wasser glatt rühren. Die abgekühlten Brezeln damit bestreichen. Trocknen lassen.
+                Schmeckt auch sehr lecker mit Schoko- oder Vanilleglasur.
+                
+                Ergibt ca. 30 Brezeln..</p>
+            </div>
+    </section5>
+    
+    <section6>
+        <div class="bottom-title">Rezept erstellt von</div>
+        <div class="avatar-name">
+            <img src="./img/Ruben.jpg" class="avatar-img" alt="avatar">
+            <br>
+            <div class="name-text">Costea Ruben Christian</div>
+        </div>
+    </section6>
+      
+    <footer w3-include-html="./footer.html"></footer>
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <style src="style.css"></style>
+
+    <link rel="shortcut icon" href="./img/logo_small.png">
+</head>
+
+<body onload="includeHTML()">
+    <header class="topnav" w3-include-html="./header.html"></header>
+
+    <nav class="kontakt-middle-section">
+        <h1>Talk to us!</h1>
+        <form class="email-div" onsubmit="sendMail(event)">
+            <label>
+                <input type="email" name="email" required placeholder="Your email..."
+                    style="width: 300px; border-radius: 5px; border: 3px solid black;">
+            </label>
+            <label>
+                <textarea name="message" required placeholder="Your message..."
+                    style="width: 300px; height: 100px;border: 3px solid black; border-radius: 5px; margin-top: 10px;"></textarea>
+            </label>
+            <button class="email-button" type="submit">Send</button>
+        </form>
+    </nav>
+
+    <footer w3-include-html="./footer.html"></footer>
+
+</body>
+
+</html>

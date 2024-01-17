@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quarktaschen</title>
+
+    <style src="style.css"></style>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+
+    <link rel="stylesheet" href="croissants.html">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+
+    <link rel="shortcut icon" href="./img/logo_small.png">
+</head>
+
+<body onload="includeHTML()">
+    <header class="topnav" w3-include-html="./header.html"></header>
+
+    <section1 class="croissant-section1">
+        <h1>Quarktaschen</h1><br>
+        <img class="header-image" src="./img/quarktaschen.webp" alt="quarktaschen.IMG">
+    </section1>
+
+    <section2 class="section2-img">
+        <div class="cookinfo">
+            <img class="logo-img" src="./img/clock-regular.svg" alt="clock.img">
+            <br>
+            <span>ca. 20 Min.</span>
+        </div>
+        <div class="cookinfo">
+            <img class="logo-img" src="./img/brain-solid.svg" alt="brain.img"><br>
+            <span>Simple</span>
+        </div>
+        <div class="cookinfo">
+            <img class="logo-img" src="./img/calendar-alt-regular.svg" alt="calendar.img">
+            <br>
+            <span>27.11.2023</span>
+        </div>
+    </section2>
+
+    <section3 class="portions">
+        <span>Zutaten für</span>
+        <input id="amount" type="number" min="1" max="10" class="input" value="2" required>
+        <a onclick="amountCheck(3); return false" class="portionen-button">Portionen</a>
+    </section3>
+
+    <section4 class="section4" id="ingrediants">
+        <span class="zutat1">2 Pkt. Blätterteig (TK)</span>
+        <span class="zutat2">1000g Quark</span>
+        <span class="zutat1">200g Zucker</span>
+        <span class="zutat2">200g Margarine</span>
+        <span class="zutat1">2 Eier</span>
+        <span class="zutat2">2 Pck. Vanillezucker</span>
+        <span class="zutat1">2 Pck. Vanillepuddingpulver</span>
+    </section4>
+
+    <section5>
+        <div class="zubereitungh1">
+            <h1>Zubereitung</h1>
+        </div>
+        <div class="cooking-time">
+            <div class="cookinfo">
+                <img class="logo-img" src="./img/clock-regular.svg" alt="clock.img">
+                <br>
+                <span>20 Minuten</span>
+            </div>
+            <div class="cookinfo">
+                <img class="logo-img" src="./img/clock-regular.svg" alt="clock.img">
+                <br>
+                <span>Gesamtzeit ca. 45 Minuten</span>
+            </div>
+        </div>
+        <div class="zubereitung-text">
+            <p>Den Blätterteig auftauen und in Quadrate schneiden.
+                Die restlichen Zutaten zu einer glatten Quarkmasse verrühren.
+                Die Blätterteigquadrate an den Seiten etwas auseinander ziehen. Jeweils zwischen 2 bis 3 EL von der
+                Quarkmasse in ein Quadrat geben und dann an den Spitzen des Teiges zusammendrücken. Auf ein mit
+                Backpapier ausgelegtes Backblech legen.
+                Im vorgeheizten Backofen bei 170°C goldgelb backen. Danach abkühlen und servieren.
+                Tipp: Sollte die Quarkmasse für den angegebenen Blätterteig nicht genügen, tut es Marmelade als
+                Ersatzfüllung – dies schmeckt auch sehr gut.</p>
+        </div>
+    </section5>
+
+    <section6>
+        <div class="bottom-title">Rezept erstellt von</div>
+        <div class="avatar-name">
+            <img src="./img/Hamidou.jpeg" class="avatar-img" alt="avatar">
+            <br>
+            <div class="name-text">Hamidou Diallo</div>
+        </div>
+    </section6>
+
+    <footer w3-include-html="./footer.html"></footer>
+
+</body>
+
+</html>

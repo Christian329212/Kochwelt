@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flammkuchen</title>
+
+    <style src="style.css"></style>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+
+    <link rel="stylesheet" href="croissants.html">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+
+    <link rel="shortcut icon" href="./img/logo_small.png">
+</head>
+
+<body onload="includeHTML()">
+    <header class="topnav" w3-include-html="./header.html"></header>
+
+    <section1 class="croissant-section1">
+        <h1>Flammkuchen</h1><br>
+        <img class="header-image" src="./img/flammenkuchen.jpg" alt="FLAMM.IMG">
+    </section1>
+
+    <section2 class="section2-img">
+        <div class="cookinfo">
+            <img class="logo-img" src="./img/clock-regular.svg" alt="clock.img">
+            <br>
+            <span>40 Min.</span>
+        </div>
+        <div class="cookinfo">
+            <img class="logo-img" src="./img/brain-solid.svg" alt="brain.img"><br>
+            <span>Normal</span>
+        </div>
+        <div class="cookinfo">
+            <img class="logo-img" src="./img/calendar-alt-regular.svg" alt="calendar.img">
+            <br>
+            <span>27.11.2023</span>
+        </div>
+    </section2>
+
+    <section3 class="portions">
+        <span>Zutaten für</span>
+        <input id="amount" type="number" min="1" max="10" class="input" value="2" required>
+        <a onclick="amountCheck(1); return false" class="portionen-button">Portionen</a>
+    </section3>
+
+    <section4 class="section4" id="ingrediants">
+        <span class="zutat1">400g geriebener Gouda</span>
+        <span class="zutat2">240g Speisequark</span>
+        <span class="zutat1">100g Créme fraiche</span>
+        <span class="zutat2">2 TL Kokosmehl</span>
+        <span class="zutat1">120g Speck</span>
+        <span class="zutat2">6 Eier</span>
+    </section4>
+
+    <section5>
+        <div class="zubereitungh1">
+            <h1>Zubereitung</h1>
+        </div>
+        <div class="cooking-time">
+            <div class="cookinfo">
+                <img class="logo-img" src="./img/clock-regular.svg" alt="clock.img">
+                <br>
+                <span>ca. 15 Minuten</span>
+            </div>
+            <div class="cookinfo">
+                <img class="logo-img" src="./img/clock-regular.svg" alt="clock.img">
+                <br>
+                <span>Gesamtzeit ca. 40 Minuten</span>
+            </div>
+        </div>
+        <div class="zubereitung-text">
+            <p>1. Alle Zutaten bis auf den Speck und die Créme fraiche in einer Schale gründlich vermengen.<br>
+                2. Die gesamte Masse auf einem Backblech mit Backpapier glattstreifen und für 10 Minuten bei 180°C
+                Umluft im Ofen backen.<br>
+                3. In der Zeit, in der der Teig backt, kannst du entspannt den Speck klein schneiden. <br>
+                4. Nach den 10 Minuten Backzeit nimmst du das Blech kurz raus und bestreichst den Teig mit der Créme
+                fraiche.<br>
+                Zusätzlich verteilst du jetzt auch noch den geschnittenen Speck, den Schnittlauch und noch etwas
+                geriebenen Gouda auf dem Teig.<br>
+                5. Nach weiteren 15 Minuten bei 180°C Umluft ist der Flammkuchen fertig und kann gegessen werden.</p>
+        </div>
+    </section5>
+
+    <section6>
+        <div class="bottom-title">Rezept erstellt von</div>
+        <div class="avatar-name">
+            <img src="./img/Sebastian.png" class="avatar-img" alt="avatar">
+            <br>
+            <div class="name-text">Sebastian Torney</div>
+        </div>
+    </section6>
+
+    <footer w3-include-html="./footer.html"></footer>
+
+</body>
+
+</html>

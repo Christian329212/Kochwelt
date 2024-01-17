@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>croissant</title>
+
+    <style src="style.css"></style>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+
+    <link rel="stylesheet" href="croissants.html">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+
+    <link rel="shortcut icon" href="./img/logo_small.png">
+</head>
+
+<body onload="includeHTML()">
+    <header w3-include-html="./header.html"></header>
+
+    
+    <section1 class="croissant-section1">
+        <h1>Französiche Croissants</h1><br>
+        <img class="header-image" src="./img/merlin.jpg" alt="CROISSANTS.IMG">
+    </section1>
+
+    <section2 class="section2-img">
+        <div class="cookinfo">
+            <img class="logo-img" src="./img/clock-regular.svg" alt="clock.img">
+            <br>
+            <span>20 Min.</span>
+        </div>
+        <div class="cookinfo">
+            <img class="logo-img" src="./img/brain-solid.svg" alt="brain.img"><br>
+            <span>Simple</span>
+        </div>
+        <div class="cookinfo">
+            <img class="logo-img" src="./img/calendar-alt-regular.svg" alt="calendar.img">
+            <br>
+            <span>27.11.2023</span>
+        </div>
+    </section2>
+
+    <section3 class="portions">
+        <span>Zutaten für</span>
+        <input id="amount" type="number" min="1" max="10" class="input" value="2" required>
+        <a onclick="amountCheck(4); return false" class="portionen-button">Portionen</a>
+    </section3>
+
+    <section4 class="section4" id="ingrediants">
+        <span class="zutat1">200g Mehl</span>
+        <span class="zutat2">20g Zucker</span>
+        <span class="zutat1">12g Hefe</span>
+        <span class="zutat2">10g Salz</span>
+        <span class="zutat1">100g Butter</span>
+        <span class="zutat2">130ml Wasser</span>
+    </section4>
+
+    <section5>
+        <div class="zubereitungh1">
+            <h1>Zubereitung</h1>
+        </div>
+        <div class="cooking-time">
+            <div class="cookinfo">
+                <img class="logo-img" src="./img/clock-regular.svg" alt="clock.img">
+                <br>
+                <span>ca. 10 Minuten</span>
+            </div>
+            <div class="cookinfo">
+                <img class="logo-img" src="./img/clock-regular.svg" alt="clock.img">
+                <br>
+                <span>Gesamt zeit ca. 30 Minuten</span>
+            </div>
+        </div>
+        <div class="zubereitung-text">
+            <p><b>1.</b> Alle Zutaten in die Schüssel einer Rührmaschine geben und für etwa fünf bis zehn Minuten
+                langsam kneten.
+                Der Hefeteig sollte nach dem Kneten möglichst geschmeidig und dehnbar sein, dabei aber nicht mehr
+                kleben. Den Teig über Nacht im Kühlschrank ruhen lassen.</p>
+            <p><b>2.</b> Die weiche Butter mit dem Mehl verkneten. Die Ziehbutter zu einem Rechteck formen, einpacken
+                und im Kühlschrank über Nacht lagern.</p>
+            <p><b>3.</b> Den Hefeteig auf rechteckig und auf etwa 0,5cm Dicke ausrollen. Die Butter ebenfalls rechteckig
+                ausrollen, allerdings nur halb so groß wie den Hefeteig.
+                Die Ziehbutter nun auf den ausgerollten Grundteig legen und den Teig eng um die Butter schlagen und mit
+                den Fingerspitzen die Enden des Teigs zusammendrücken, sodass keine Butter mehr zu sehen ist.
+                Den Teig nun für 30 Minuten kalt stellen.</p>
+            <p><b>4.</b> Den Teig nun auf etwa 20x45cm ausrollen. Restliches Mehl mit der Hand oder mit einem Pinsel
+                abkehren.
+                Nun ein Drittel des Teigs einschlagen und das gegenüberliegende Drittel darüber schlagen.
+                Den Teig erneut für 30 Minuten kühlen lassen und den Schritt anschließend wiederholen.
+                Den Schritt zweimal wiederholen, dabei den Teig nach jeder Tour um 90° drehen und jeweils 30 Minuten
+                kühlen.</p>
+            <p><b>5.</b> Die Arbeitsfläche mit Mehl bestauben. Den Teig etwa einen halben Zentimeter dünn ausrollen.</p>
+            <p><b>6.</b> Den Croissantteig mit einem scharfen Messer in 8x15cm große Rechtecke schneiden. Die Rechtecke
+                zu zwei gleich großen Dreiecken halbieren.</p>
+            <p><b>7.</b> Die Croissants von der kurzen Kante zur Spitze auf der gegenüberliegenden Seite hin einrollen.
+            </p>
+            <p><b>8.</b> Die Croissants auf ein Backblech setzen und an einem warmen Ort für 30 Minuten gehen lassen.
+                In der Zwischenzeit das Ei mit einer Prise Salz verquirlen. Den Backofen auf 170°C vorheizen.
+                Die aufgegangenen Croissants vorsichtig mit der Eistreiche bepinseln. Die Croissants für etwa 15 Minuten
+                backen.</p>
+        </div>
+    </section5>
+
+    <section6>
+        <div class="bottom-title">Rezept erstellt von</div>
+        <div class="avatar-name">
+            <img src="./img/Ruben.jpg" class="avatar-img" alt="avatar">
+            <br>
+            <div class="name-text">Costea Ruben Christian</div>
+        </div>
+    </section6>
+
+    <footer w3-include-html="./footer.html"></footer>
+
+</body>
+
+</html>
